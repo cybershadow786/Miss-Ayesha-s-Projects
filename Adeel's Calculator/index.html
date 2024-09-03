@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="headdingBox">
+            <h1 class="headding">
+                Calculator
+            </h1>
+        </div>
+        <div class="calc">
+            <div class="screenBox">
+                <h3 class="screen">
+                    Result
+                </h3>
+                <div class="clear">
+                    C
+                </div>
+            </div>
+            <div class="keyBox">
+                <ul class="keys">
+                    <li class="btns" id="btn-1" onclick="collectVal('1')">1</li>
+                    <li class="btns" id="btn-2" onclick="collectVal('2')">2</li>
+                    <li class="btns" id="btn-3" onclick="collectVal('3')">3</li>
+                    <li class="btns" id="btn-4" onclick="collectVal('+')">+</li>
+                    <li class="btns" id="btn-5" onclick="collectVal('4')">4</li>
+                    <li class="btns" id="btn-6" onclick="collectVal('5')">5</li>
+                    <li class="btns" id="btn-7" onclick="collectVal('6')">6</li>
+                    <li class="btns" id="btn-8" onclick="collectVal('-')">-</li>
+                    <li class="btns" id="btn-9" onclick="collectVal('7')">7</li>
+                    <li class="btns" id="btn-10" onclick="collectVal('8')">8</li>
+                    <li class="btns" id="btn-11" onclick="collectVal('9')">9</li>
+                    <li class="btns" id="btn-12" onclick="collectVal('*')">x</li>
+                    <li class="btns" id="btn-13" onclick="collectVal('/')">/</li>
+                    <li class="btns" id="btn-14" onclick="collectVal('0')">0</li>
+                    <li class="btns" id="btn-15" onclick="collectVal('.')">.</li>
+                    <li class="btns" id="btn-16" onclick="calculateVal()">=</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="headingBox">
+            <h1 class="heading">Simple Calculator</h1>
+        </div>
+        <div class="calc">
+            <div class="screenBox">
+                <h3 class="screen">Result</h3>
+                <div class="clear">C</div>
+            </div>
+            <div class="keyBox">
+                <ul class="keys">
+                    <li class="btns" onclick="collectVal('1')">1</li>
+                    <li class="btns" onclick="collectVal('2')">2</li>
+                    <li class="btns" onclick="collectVal('3')">3</li>
+                    <li class="btns operator" onclick="collectVal('+')">+</li>
+                    <li class="btns" onclick="collectVal('4')">4</li>
+                    <li class="btns" onclick="collectVal('5')">5</li>
+                    <li class="btns" onclick="collectVal('6')">6</li>
+                    <li class="btns operator" onclick="collectVal('-')">-</li>
+                    <li class="btns" onclick="collectVal('7')">7</li>
+                    <li class="btns" onclick="collectVal('8')">8</li>
+                    <li class="btns" onclick="collectVal('9')">9</li>
+                    <li class="btns operator" onclick="collectVal('*')">x</li>
+                    <li class="btns operator" onclick="collectVal('/')">/</li>
+                    <li class="btns" onclick="collectVal('0')">0</li>
+                    <li class="btns" onclick="collectVal('.')">.</li>
+                    <li class="btns equal" onclick="calculateVal()">=</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->

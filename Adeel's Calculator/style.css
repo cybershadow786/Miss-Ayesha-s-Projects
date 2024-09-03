@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headingBox {
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.calc {
+    width: 90%;
+    max-width: 360px;
+}
+
+.screenBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 1rem; */
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 0.5rem 0;
+    margin-bottom: .5rem;
+}
+
+.screen {
+    background-color: rgb(46,50,49);
+    border-radius: 3px;
+    user-select: none;
+    width: 100%;
+    color: rgb(89,93,92);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    overflow-x: auto;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.clear {
+    border: 2px solid red;
+    background-color: red;
+    width: 31.5%;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 3px;
+    transition: all .25s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.keyBox {
+    width: 100%;
+}
+
+.keys {
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 0;
+}
+
+.btns {
+    border: 1px solid rgb(47,51,50);
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 3px;
+    background-color: rgb(47,51,50);
+    transition: all .25s ease-in-out;
+    user-select: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.btns.operator {
+    background-color: rgb(82,87,85);
+}
+
+.btns.operator:hover {
+    background-color: rgb(64,71,69);
+}
+
+.btns.equal {
+    background-color: rgb(100,150,100);
+    color: white;
+    grid-column: span 4; /* Makes the '=' button span all columns */
+}
+
+.btns:hover {
+    background-color: rgb(25,31,29);
+}
